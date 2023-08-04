@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from "react"
 import { useHistory } from "react-router"
 
@@ -16,7 +17,7 @@ function NewPlaceForm() {
 	async function handleSubmit(e) {
 		e.preventDefault()
 
-		await fetch(`http://localhost:5000/places`, {
+		await fetch(`http://localhost:3001/places`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
